@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Listing</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <header>
+        <input type="text" id="autocomplete-input" placeholder="Search doctor..." data-testid="autocomplete-input">
+        <div id="suggestions-list"></div>
+    </header>
+
+    <section id="filters">
+        <h3 data-testid="filter-header-moc">Consultation Mode</h3>
+        <label><input type="radio" name="consultation-mode" value="video" data-testid="filter-video-consult"> Video Consult</label>
+        <label><input type="radio" name="consultation-mode" value="in-clinic" data-testid="filter-in-clinic"> In Clinic</label>
+
+        <h3 data-testid="filter-header-speciality">Specialties</h3>
+        <div id="specialties-filter">
+            <!-- Specialties checkboxes will go here -->
+        </div>
+
+        <h3 data-testid="filter-header-sort">Sort by</h3>
+        <label><input type="radio" name="sort" value="fees" data-testid="sort-fees"> Fees (ascending)</label>
+        <label><input type="radio" name="sort" value="experience" data-testid="sort-experience"> Experience (descending)</label>
+    </section>
+
+    <section id="doctor-list">
+        <!-- Doctor cards will be rendered here -->
+    </section>
+
+    <script src="assets/scripts.js"></script>
+</body>
+</html>
